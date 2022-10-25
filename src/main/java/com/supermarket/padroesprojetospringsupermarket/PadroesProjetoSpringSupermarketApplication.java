@@ -11,8 +11,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * -Spring Data JPA
  * -H2 Database
  * -OpenFeing
+ * -OpenAPI/Swagger (adicionado manualmente)
  *
  * @Author James Anderson
+ * @Version 1.0
  */
 
 @EnableFeignClients//Projeto fica ciente que utilizará o OPenFeign: habilita o Client do Feing.

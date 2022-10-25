@@ -7,12 +7,12 @@ public class Produto {
 
     @Id//Chave da entidade.
     @GeneratedValue(strategy = GenerationType.AUTO)// Chave gerada automaticamente.
-    private int codigo;
+    private Long codigo;
     private String nome;
     public Produto() {
     }
 
-    public Produto(int codigo, String nome) {
+    public Produto(Long codigo, String nome) {
 
         this.codigo = codigo;
         this.nome = nome;
@@ -24,11 +24,11 @@ public class Produto {
         this.setNome(nome);
     }
 
-    public int getCodigo() {
+    public Long getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Long codigo) {
         this.codigo = codigo;
     }
 

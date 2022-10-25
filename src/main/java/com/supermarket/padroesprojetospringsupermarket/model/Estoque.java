@@ -2,6 +2,7 @@ package com.supermarket.padroesprojetospringsupermarket.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 
@@ -9,16 +10,17 @@ import java.time.LocalDate;
 public class Estoque {
 
     @Id
+    private Long id;
     @ManyToOne
-    /*Produto apresenta um estoque determinado, mas o mesmo tipo de estoque
-     pode ter outros produtos.*/
+    @JoinColumn(name = "produto_codigo")
     private Produto produto;
     private int quantidadeAtual;
     private int quantidadeMinima;
 
     public Estoque() {}
 
-    public Estoque(Produto produto, int quantidadeAtual, int quantidadeMinima) {
+    public Estoque(Long id, Produto produto, int quantidadeAtual, int quantidadeMinima) {
+        this.id = id;
         this.produto = produto;
         this.quantidadeAtual = quantidadeAtual;
         this.quantidadeMinima = quantidadeMinima;
@@ -46,9 +48,18 @@ public class Estoque {
     public void relatorio(Estoque estoque){
 
         System.out.println(LocalDate.now());
+        System.out.println("Codigo do estoque: " + this.getId());
         System.out.println("Produto/(cod): " + this.produto.getNome() + "/" + this.produto.getCodigo());
         System.out.println("Quantidade Atual: " + this.getQuantidadeAtual());
         System.out.println("Quantidade Mínima: " + this.getQuantidadeMinima());
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Produto getProduto() {
