@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Produto {
 
     @Id//Chave da entidade.
-    @GeneratedValue(strategy = GenerationType.AUTO)// Chave gerada automaticamente.
+
     private Long codigo;
     private String nome;
     public Produto() {
