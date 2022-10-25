@@ -15,7 +15,7 @@ public interface ClienteService {
 
     Iterable<Cliente> buscarTodos();
 
-    Produto buscarById(Long id);
+    Cliente buscarById(Long id);
 
     void inserir(Cliente cliente);
 

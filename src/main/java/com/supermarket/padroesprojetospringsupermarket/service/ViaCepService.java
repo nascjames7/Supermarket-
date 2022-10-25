@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  */
 
-@FeignClient(name="viacep", url = "https://www.viacep.com.br")
+@FeignClient(name="viacep", url = "https://www.viacep.com.br/ws")//URL base para obter as informações do cep.
 public interface ViaCepService {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/{cep}/(json)/")
+    @RequestMapping(method = RequestMethod.GET, value = "/{cep}/(json)/")//Método que busca o JSON, que é converte no endereço populado.
     Endereco consultarCep(@PathVariable("cep")String cep);
 }
