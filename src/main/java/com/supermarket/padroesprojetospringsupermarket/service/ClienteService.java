@@ -1,7 +1,7 @@
 package com.supermarket.padroesprojetospringsupermarket.service;
 
 import com.supermarket.padroesprojetospringsupermarket.model.Cliente;
-import com.supermarket.padroesprojetospringsupermarket.model.Produto;
+
 
 /**
  * Interface que define o padrão <b>strategy</b> do domínio do produto. Com isso,

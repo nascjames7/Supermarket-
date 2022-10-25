@@ -37,14 +37,14 @@ public class ClienteRestController {
         return ResponseEntity.ok(cliente);
     }
 
-    @PutMapping//Alterar os dados de um cliente.
-    public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @PathVariable Cliente cliente){
+    @PutMapping("/{id}")//Alterar os dados de um cliente.
+    public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody Cliente cliente){
 
         clienteService.atualizar(id, cliente);
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping//Excluir os dados de um cliente.
+    @DeleteMapping("/{id}")//Excluir os dados de um cliente.
     public ResponseEntity<Void> deletar(@PathVariable Long id){
 
         clienteService.deletar(id);
