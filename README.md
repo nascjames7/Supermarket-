@@ -27,7 +27,7 @@ e Intellij, além da linguagem Java através da criação de arquivo através do
 
 <p>
 <strong>	1.</strong> ABSTRAIR o DOMÍNIO Vacinação COVID-19 e MODELAR seus ATRIBUTOS E MÉTODOS <br>
-<strong>	2.</strong> Criar as CLASSES: Vacina, Pessoa (abstrata), PessoaProdutiva, Idoso, TrabalhadorSaude, RegistroVacina e RelacaoVacinados, e relaciona-las <br>
+<strong>	2.</strong> Criar as CLASSES: Produto, Estoque, e relaciona-las <br>
 <strong>	3.</strong> As CLASSES Curso, Mentoria e Devs também serão MODELADOS, ou seja, criaremos seus ATRIBUTOS E MÉTODOS <br> 
 <strong>	4.</strong> Para que o código fique mais legível e de fácil manutenção, iremos utilizar de algumas das ferramentas que o PARADIGMA DE ORIENTAÇÃO A OBJETOS (POO) nos oferece: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO <br>
 <strong>	5.</strong> E para representar CLASSES que foram criadas e relacionadas, iremos transforma-las em OBJETOS<br>
