@@ -12,11 +12,21 @@
 ✅ Conta no GitHub<br>
 </p>
 
+<h3>💎Gitignore</h3>
+
+<p>Foi acrescentado no gitignore complementos relativos as IDE(s) Eclipse, VisualStudio Code
+e Intellij, além da linguagem Java através da criação de arquivo através do link: https://www.toptal.com/developers/gitignore</p>
+
+<h3>💎Spring Boot</h3>
+
+<p>Foram configuradas dependências através do framework spring: Spring web, Spring Data JPA, H2 Database e OpenFeing, usando Java 11 e Maven Project através do link: https://start.spring.io/</p>
+
+<p>A dependência do OpenAPI/Swagger foi adicionada manualmente no pom.xml (para que esta dependência não apresentasse erro, a IDE deve ser reinicializada ou atualizada).</p>
 
 <h2> 👣 Passo-a-Passo</h2>
 
 <p>
-<strong>	1.</strong> ABSTRAIR o DOMÍNIO Vacinação COVIDD-19 e MODELAR seus ATRIBUTOS E MÉTODOS <br>
+<strong>	1.</strong> ABSTRAIR o DOMÍNIO Vacinação COVID-19 e MODELAR seus ATRIBUTOS E MÉTODOS <br>
 <strong>	2.</strong> Criar as CLASSES: Vacina, Pessoa (abstrata), PessoaProdutiva, Idoso, TrabalhadorSaude, RegistroVacina e RelacaoVacinados, e relaciona-las <br>
 <strong>	3.</strong> As CLASSES Curso, Mentoria e Devs também serão MODELADOS, ou seja, criaremos seus ATRIBUTOS E MÉTODOS <br> 
 <strong>	4.</strong> Para que o código fique mais legível e de fácil manutenção, iremos utilizar de algumas das ferramentas que o PARADIGMA DE ORIENTAÇÃO A OBJETOS (POO) nos oferece: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO <br>
